@@ -2,7 +2,7 @@
 
 import {data} from "../../helpers/data"
 import Card from "./Card";
-
+import "./Main.scss";
 
 const Main = ()=>{
     console.log(data);
