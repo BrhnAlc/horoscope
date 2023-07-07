@@ -1,25 +1,21 @@
 
 
-const Card = (props)=>{
-    console.log("ne oldu", props);
+const Card = ({title,date,image,desc})=>{
+    // console.log("ne oldu", props);
     return(
         <div className="cards">
             <div className="title">
 
-        <h1>Aries</h1></div>
+        <h1>{title}</h1></div>
 
         <div className="date">
-        <h2>date</h2>
-         </div>
-         
-         <img src="" alt="" />
-         <div>
-            <p>description</p>
+        <h2>{date}</h2>
          </div>
 
-
-
-            
+         <img src={image} alt="" />
+         <div className="card-over">
+            <p>{desc}</p>
+         </div> 
           </div>
     )
 }
